@@ -189,9 +189,9 @@ def send_email(subject, body, to):
     server = smtplib.SMTP(host='smtp.gmail.com', port=587)
     server.ehlo()
     server.starttls()
-    server.login("sad31198@gmail.com", "anilsujata")
+    server.login("usermail", "password")
     message = f'Subject: {subject}\n\n{body}'
-    server.sendmail("sad31198@gmail.com", to, message)
+    server.sendmail("usermail", to, message)
     server.quit()
 
 def send_mail_to_users(users, msg):
@@ -239,77 +239,3 @@ def main():
 main()
 print("program terminated")
 	
-'''
-msg += "IST " + club["meeting_time"].strip()
-msg += "\nClub name: " + club["club_name"]
-msg += "\nDetails: " + club["meeting_details"]
-msg += "\nLanguage: "+ club["language"] + "\n\n"
-
-Time: 14th November 20   00:30
-Club Name: Albuquerque Hispano Chamber
-Language: English
-Meeting Theme: If I would have know what I know now...
-Meeting Link: http://us04web.zoom.us/j/201004
-
-Time:   00:35
-Club Name: Club Med Toastmasters
-Language: EnglishMeeting 
-Theme: VeteransMeeting Link: http://zoom.us/j/Zoom389597650
-
-Time:   01:30
-Club Name: Redmond Toasters
-Language: English
-Meeting Theme: Attitude and Possibilities
-Meeting Link: http://zoom.us/j/964594564?pwd=cGxtTWJMZW0veXlmUFVyVWVzcHd2UT09
-
-Time:   01:35
-Club Name: Downtown Lunchbunch
-Language: English
-Meeting Theme: World Kindness Day
-Meeting Link: http://us02web.zoom.us/j/81427789297
-
-Time:   01:45
-Club Name: Torrance Chamber of Commerce
-Language: English
-Meeting Theme: Q&A with Clara on Hypnosis
-Meeting Link: http://zoom.us/j/81698436165
-
-Time:   02:00
-Club Name: Yammertime
-Language: English
-Meeting Theme: Open Office Hours
-Meeting Link: http://zoom.us/j/84724909463
-
-Time:   02:30
-Club Name: Create WOW!
-Language: English
-Meeting Theme: TBA
-Meeting Link: http://zoom.us/j/7094012267
-
-Time:   03:30
-Club Name: Clover Club
-Language: English
-Meeting Theme: TBA
-Meeting Link: http://us02web.zoom.us/j/81752909750?pwd=WkRCdU5TVWdOMHdPek9IS0
-
-Time:   05:00
-Club Name: Luminex
-Language: English
-Meeting Theme: Excellence
-Club Link: https://easy-speak.org/view_meeting.php?t=416040
-
-Time:   05:00
-Club Name: Luminex
-Language: English
-Meeting Theme: Excellence
-Club Link: https://easy-speak.org/view_meeting.php?t=416041
-
-Time:   05:00
-Club Name: Luminex
-Language: English
-Meeting Theme: Excellence
-Club Link: https://easy-speak.org/view_meeting.php?t=416039
-
-
-print(msg)
-'''
