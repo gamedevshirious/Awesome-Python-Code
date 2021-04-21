@@ -1,0 +1,6 @@
+**ping**      : **Replies Pong !**
+**servers**   : **Know how many servers bot in !**
+**rps**       : **Play Rock Paper Scissors**
+**tictactoe** : **Play Tic Tac Toe - Three in a Row**
+**bugreport** : **To report bugs or suggestions**
+**invite**    : **Play Discord Games on ur Server**

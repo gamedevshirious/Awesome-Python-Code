@@ -1,0 +1,10 @@
+2017-10-04 22:31:36.867933 :  Created Logs for Bugs and Updates , Fixed bugs in 'tictactoe' and 'rps' , Successfully got first Bug report by SuperSebi aka kata ?
+2017-10-05 09:37:13.055597 :  created embedded Color Pongpdates , Fixed bugs in 'tictactoe' and 'rps' 
+2017-10-05 09:58:48.546048 :  Started own help command
+2017-10-05 10:06:00.197845 :  I did a Good Work
+2017-10-09 09:54:03.500517 :  <<rps singleplayer OK
+2017-10-09 09:59:13.991605 :  tictactoe single player ok
+2017-10-09 10:07:01.582581 :  <<rps Two Player Ok
+2017-10-09 10:19:34.196953 :  <<tictactoe doubleplayer Ok
+2017-10-09 21:38:14.727043 :  fixed more rps issues
+2017-10-10 21:56:31.822137 :  I think everything till now is bug-less

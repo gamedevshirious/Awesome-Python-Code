@@ -1,0 +1,41 @@
+@bot.command(pass_context = True,name="20questions")
+async def G20questions(ctx) :
+
+
+
+	await bot.say('Player one is **\'{}\'** \nThink of some word in bot DM'.format(ctx.message.author.display_name))
+	await bot.send_message(ctx.message.author ,'Tell the word u would like to get **Guessed!**')
+	wrd = await bot.wait_for_message(author = ctx.message.author)
+	word = (wrd.content).lower()
+	bot.delete_message(ctx.message)
+	print(word)
+	await bot.say('Who wants to play !\nType \'__P2__\' to play with {}'.format(ctx.message.author.display_name))
+	plyr = await bot.wait_for_message(content = 'P2' , timeout = 30)
+	while plyr.author == ctx.message.author :
+		await bot.say('Not you !')
+		plyr = await bot.wait_for_message(content = 'P2' , timeout = 30)
+	await bot.say('Player 2 is **\'{}\'**:\n*Ready to play!*'.format(plyr.author.display_name))
+	await bot.say('{} ,Start asking the questions !'.format(plyr.author.display_name))
+	player = 'lose'
+	for i in range(20) :
+		bb = await bot.say('Question {} :'.format(str(i+1)))
+		ques = await bot.wait_for_message(author = plyr.author)
+		s = (ques.content).lower()
+		if word in s  :
+			player = 'win'
+			await bot.say(':sparkles:You Win ,{}'.format(plyr.author.display_name))
+			break
+		bc = await bot.say('{} ,Answer \'Yes\' or \'No\''.format(ctx.message.author.display_name))
+	if player == 'lose' :
+		await bot.say('You lose ,{0}\n the word is {1}'.format(plyr.author.display_name,word))				
+	await bot.say('XXXGame OverXXX')
+
+
+@bot.command(pass_context = True)
+async def connect4(ctx) :
+	b , mx = connnect4.board() , []
+	ss = b.brrd
+	for i in range(len(ss)):
+		mx.append(replacenums(ss[i]))
+	em = discord.Embed(description = ''.join(mx) ,colour = int(hex(random.randint(0,16777215)),16))
+	await bot.say(embed = em)

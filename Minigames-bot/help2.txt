@@ -1,0 +1,18 @@
+ping      : Replies Pong !
+servers   : Know how many servers bot in !
+rps       : Play Rock Paper Scissors
+tictactoe : Play Tic Tac Toe - Three in a Row
+bugreport : To report bugs or suggestions
+invite    : Play Discord Games on ur Server
+
+servers : To know number of servers Bot in
+servers list : To See the list of servers
+servers find *server_name* : To See whether Mini Games played there ...
+
+rps : For Single Player against Bot 
+rps @user : To play with 'user'
+
+tictactoe : For Single Player against Bot
+tictactoe @user : To play with 'user'
+
+bugreport "complain" : To report bug / report / complain / suggestion / request / advice / contribution 
