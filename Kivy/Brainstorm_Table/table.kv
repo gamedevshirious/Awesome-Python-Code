@@ -1,0 +1,30 @@
+#:import win kivy.core.window
+
+<Container> :
+    padding : (self.width * 2) / 100 , (self.height * 2) /100	
+    spacing : 5
+    cols : 1
+    BoxLayout:
+        id : desk
+        size_hint_y : 3
+    GridLayout :
+        size_hint_y : .5
+        spacing : 10
+        cols : 2
+        Button :
+            text : "+"
+            size_hint : .1 , 1
+            on_press : root.add_label()
+        TextInput :
+            id : lbl_text
+            text : "default"
+         
+         
+<DeskObj> :    
+    on_size: self.center = win.Window.center
+    size: obj.size
+    size_hint: None, None
+    Label :
+        id : obj
+            
+    
